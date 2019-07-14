@@ -35,10 +35,5 @@ osc_register_plugin( osc_plugin_path( __FILE__ ), 'fa_call_after_install' );
 // This is a hack to show a Configure link at plugins table (you could also use some other hook to show a custom option panel)
 osc_add_hook( osc_plugin_path( __FILE__ ) . '_configure', 'fa_config' );
 // This is a hack to show a Uninstall link at plugins table (you could also use some other hook to show a custom option panel)
-osc_add_hook( osc_plugin_path( __FILE__ ) . '_uninstall', 'fa_call_after_uninstall' );
-
-// osc_add_hook('delete_user', 'sc_delete_user');
-// osc_add_hook('init',        'sc_check_logout');
-// osc_add_hook('logout',      'sc_logout');
-?>
+osc_add_hook( osc_plugin_path( __FILE__ ) . '_uninstall', 'fa_call_after_uninstall' );?>
 
